@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas UAO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="resources/logo_Horizontal.png">
+        <nav>
+            <a href="#">Reservas</a>
+            <a href="#">Espacios Reservados</a>
+            <a href="#">Mapa</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div id="user">
+            <div>
+                <p id="name">Nombre Usuario</p>
+                <p id="mail">gmail@uao.edu.co</p>
+            </div>
+            <div id="arrowU">
+                <img src="resources/iconos/flecha-usuario.png" alt="">
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <h1 id="title">RESERVA DE ESPACIOS</h1>
+    <div id="reservation">
+        <div id="filter">
+            <div id="elementsR">
+                <div id="element">
+                    <img class="img" src="resources/iconos/calendario.png" alt="">
+                    <p>Fecha:</p>
+                </div>
+                <div id="element">
+                    <img class="img" src="resources/iconos/computadora.png" alt="">
+                    <p>Tipo:</p>
+                </div>
+                <div id="element">
+                    <img class="img" src="resources/iconos/equipo.png" alt="">
+                    <p>Cantidad:</p>
+                </div>
+            </div>
+            <div id="elementsR">
+                <div class="f-dropdown">
+                    <input type="date" id="date" onclick="" class="mt-4 form-control">
+                </div>
+                <div class="f-dropdown">
+                    <select id="operation" class="btOp" onchange="handleOperate()">
+                        <option value="Salones">Salón</option>
+                        <option value="resta">Sala de sistemas</option>
+                        <option value="multiplicacion">Sala Mac</option>
+                    </select>
+                    <i class="f-rowD"></i>
+                </div>
+                <div class="f-dropdown">
+                    <select id="operation" class="btOp" onchange="handleOperate()">
+                        <option value="suma">Menor o igual a 5</option>
+                        <option value="resta">Menor o igual a 10</option>
+                        <option value="multiplicacion">Menor o igual a 20</option>
+                        <option value="division">Mas de 20</option>
+                    </select>
+                    <i class="f-rowD"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rooms">
+        <h2>Salones disponibles</h2>
+        <div id="room">
+            <div id="nuRoom" onclick="accion()">
+                <p>Salon 0000</p>
+                <img class="" src="resources/iconos/flecha-blanca.png" alt="">
+            </div>
+            <table id="table" class="f-hide f-text">
+                <tr>
+                    <th>Hora</th>
+                    <th>lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>7:00 a.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>8:00 a.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>9:00 a.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>10:00 a.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>11:00 a.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>12:00 a.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>1:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>2:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>3:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>4:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>5:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>7:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>8:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+                <tr>
+                    <td>9:00 p.m.</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                    <td class="f-available">Disponible</td>
+                </tr>
+            </table>
+        </div>
+        <div id="room">
+            <div id="nuRoom">
+                <p>Salon 1234</p>
+                <img src="resources/iconos/flecha-blanca.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="btnReservation">
+        <button id="buttonR">Reservar</button>
+    </div>
+    <div id="publi">
+        <img id="image" src="resources/Salas Mac 2.png" alt="">
+        <img id="image" src="resources/Salones.png" alt="">
+        <img id="image" src="resources/Salas de sistemas.png" alt="">
+    </div>
+
+    <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

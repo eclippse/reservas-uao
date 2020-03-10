@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding: 0 0 0rem 0;
+    background-color: rgb(226, 225, 225);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    color: white;
+}
+
+header img {
+    width: 12rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header a:hover {
+    color: #ff2f2f;
+}
+
+#user {
+    width: 12rem;
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+}
+
+#name {
+    font-size: 0.9rem;
+}
+
+#mail {
+    font-size: 0.7rem;
+}
+
+#arrowU {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#user img {
+    width: 0.7rem;
+}
+
+#reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#publi{
+    box-shadow: 0 0 6px rgb(77, 77, 77);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    margin: 4rem 0rem 2rem 0;
+}
+
+#image{
+    width: 20rem;
+    height: 100%;
+}
+
+#title {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: 0.4rem;
+    padding: 3rem 0 2rem 0;
+}
+
+#filter {
+    
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0 35%; */
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    /* border: 3px solid rgb(236, 50, 4); */
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(77, 77, 77);
+    color: rgb(33, 33, 33);
+    font-weight: 400;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+#date {
+    /* font-family: sans-serif; */
+    font-weight: 500;
+    border-radius: 15px;
+    border: 2px solid rgb(236, 50, 4);
+    color: rgb(160, 33, 1);
+    padding: 0.2rem 0 0.2rem 0.4rem;
+}
+
+#elementsR .f-dropdown {
+    padding: 0.4rem;
+}
+
+
+/* select */
+
+.f-dropdown select {
+    font-weight: 500;
+    color: rgb(160, 33, 1);
+    border-radius: 15px;
+    border: 2px solid #ec3204;
+    padding: 0.2rem;
+}
+
+.f-dropdown option {
+    vertical-align: middle;
+    padding: 0.2rem;
+}
+
+#element{
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#elementsR p {
+    padding: 0.65rem 1rem;
+}
+
+#rooms h2 {
+    
+    font-weight: 400;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+#room {
+    background-color: #212121;
+    /* border: 3px solid #ec3203; */
+
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 16%;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#nuRoom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 0;
+    cursor: pointer;
+}
+
+#room img {
+    
+    height: 0.7rem;
+}
+
+.f-available {
+    /* border: 1px solid white; */
+    background-color: #125e38;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+
+
+#table {
+    padding: 1rem 0rem 0 3rem;
+}
+
+#table th {
+    padding: 0 1.5rem 0.2rem 1.5rem;
+}
+
+#table td {
+    text-align: center;
+}
+
+#btnReservation {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 16%;
+}
+
+#buttonR {
+    border-radius: 7px;
+    border: 0;
+    background-color: rgb(197, 4, 4);
+    color: white;
+    padding: 0.4rem 0.6rem;
+    margin: 2rem 0 0 0;
+    cursor: pointer;
+}
+
+
+/* ver horario */
+
+.hide {
+    display: none;
+}
+
+
+/* Scroll */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(33, 33, 33);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 47, 47);
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    #arrowU {
+        padding: 0 0 0 0.5rem;
+    }
+    #filter {
+        margin: 0 10%;
+    }
+    #btnReservation {
+        justify-content: center;
+    }
+    #room {
+        margin: 0.5rem 10%;
+    }
+    #buttonR {
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+    }
+}
